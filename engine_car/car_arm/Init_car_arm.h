@@ -9,7 +9,7 @@
 
 #include "Math_calculate.h"
 
-
+#include "Init_car_arm.h"
 
 
 extern CanMsgQueue        Mechanical_arm_CAN2_Queue; // 达妙CAN消息队列
