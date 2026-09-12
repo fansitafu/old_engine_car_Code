@@ -22,6 +22,7 @@ StateConfig Only_basis_control_State = {0x06, Only_arm_control_onEnter_state, NU
 
 
 
+
 uint16_t an_d = 90;
 //int CLOSE = 40;
 
@@ -115,7 +116,7 @@ if(time_ < 2000)
 	if (Remote_Updata_Time - Remote_Last_Updata_Time >= 100 || remote_data_->Switch_Left == 1)  Car_StateMachine1.setState(0x01);
 	else if(remote_data_->Switch_Left == 2 && remote_data_->Switch_Right == 1)					Car_StateMachine1.setState(0x03);
 	else if(remote_data_->Switch_Left == 2 && remote_data_->Switch_Right == 3)					Car_StateMachine1.setState(0x03);
-	else if(remote_data_->Switch_Left == 2 && remote_data_->Switch_Right == 2)					Car_StateMachine1.setState(0x07);
+	else if(remote_data_->Switch_Left == 2 && remote_data_->Switch_Right == 2)					Car_StateMachine1.setState(0x02);
 	else if(remote_data_->Switch_Left == 3 && remote_data_->Switch_Right == 1)				    Car_StateMachine1.setState(0x03);
 	else if(remote_data_->Switch_Left == 3 && remote_data_->Switch_Right == 3)					Car_StateMachine1.setState(0x05);
 	else if(remote_data_->Switch_Left == 3 && remote_data_->Switch_Right == 2)					Car_StateMachine1.setState(0x06);
